@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cy-maths-in/static/css/main.d4b3d240.css",
-    "main.js": "/cy-maths-in/static/js/main.52f898a2.js",
-    "index.html": "/cy-maths-in/index.html",
-    "main.d4b3d240.css.map": "/cy-maths-in/static/css/main.d4b3d240.css.map",
-    "main.52f898a2.js.map": "/cy-maths-in/static/js/main.52f898a2.js.map"
+    "main.css": "/static/css/main.d4b3d240.css",
+    "main.js": "/static/js/main.77009146.js",
+    "index.html": "/index.html",
+    "main.d4b3d240.css.map": "/static/css/main.d4b3d240.css.map",
+    "main.77009146.js.map": "/static/js/main.77009146.js.map"
   },
   "entrypoints": [
     "static/css/main.d4b3d240.css",
-    "static/js/main.52f898a2.js"
+    "static/js/main.77009146.js"
   ]
 }
