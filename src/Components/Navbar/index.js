@@ -26,24 +26,24 @@ export default function Navbar() {
     <>
       <Nav>
         
-        <NavLinkImg to="/" >
+        <NavLinkImg to="/cy-maths-in/" >
           <StyledLogo src={logo} alt="logo" />
         </NavLinkImg>
 
         <NavMenu>
-          <NavLinkTxt to="/about-us" >
+          <NavLinkTxt to="/cy-maths-in/about-us" >
             About us
           </NavLinkTxt>
-          <NavLinkTxt to="/services" >
+          <NavLinkTxt to="/cy-maths-in/services" >
             Services
           </NavLinkTxt>
-          <NavLinkTxt to="/events" >
+          <NavLinkTxt to="/cy-maths-in/events" >
             Events
           </NavLinkTxt>
-          <NavLinkTxt to="/contact" >
+          <NavLinkTxt to="/cy-maths-in/contact" >
             Contact
           </NavLinkTxt>
-          <NavLinkTxt to="/support" >
+          <NavLinkTxt to="/cy-maths-in/support" >
             Support
           </NavLinkTxt>
         </NavMenu>
@@ -59,31 +59,31 @@ export default function Navbar() {
               </CloseIconWrapper>
             </SidebarClose>
 
-            <SidebarLink to="/about-us" onClick={() => {setSitebar(prev => !prev)}} >
+            <SidebarLink to="/cy-maths-in/about-us" onClick={() => {setSitebar(prev => !prev)}} >
               <SidebarLabel>
                 About us
               </SidebarLabel>
             </SidebarLink>
 
-            <SidebarLink to="/services" onClick={() => {setSitebar(prev => !prev)}} >
+            <SidebarLink to="/cy-maths-in/services" onClick={() => {setSitebar(prev => !prev)}} >
               <SidebarLabel>
                 Services
               </SidebarLabel>
             </SidebarLink>
 
-            <SidebarLink to="/events" onClick={() => {setSitebar(prev => !prev)}} >
+            <SidebarLink to="/cy-maths-in/events" onClick={() => {setSitebar(prev => !prev)}} >
               <SidebarLabel>
                 Events
               </SidebarLabel>
             </SidebarLink>
 
-            <SidebarLink to="/contact" onClick={() => {setSitebar(prev => !prev)}} >
+            <SidebarLink to="/cy-maths-in/contact" onClick={() => {setSitebar(prev => !prev)}} >
               <SidebarLabel>
                 Contact
               </SidebarLabel>
             </SidebarLink>
 
-            <SidebarLink to="/support" onClick={() => {setSitebar(prev => !prev)}} >
+            <SidebarLink to="/cy-maths-in/support" onClick={() => {setSitebar(prev => !prev)}} >
               <SidebarLabel>
                 Support
               </SidebarLabel>

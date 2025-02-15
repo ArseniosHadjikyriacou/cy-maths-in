@@ -35,55 +35,55 @@ export default function App() {
         <Route element={<Layout />}>
 
           <Route
-            path="/"
+            path="/cy-maths-in/"
             element={<Home />}
           />
           <Route
-            path="/about-us"
+            path="/cy-maths-in/about-us"
             element={<AboutUs />}
           />
           <Route
-            path="/about-us/aim"
+            path="/cy-maths-in/about-us/aim"
             element={<OurAim />}
           />
           <Route
-            path="/about-us/vision"
+            path="/cy-maths-in/about-us/vision"
             element={<OurVision />}
           />
           <Route
-            path="/services"
+            path="/cy-maths-in/services"
             element={<Services />}
           />
           <Route
-            path="/services/services1"
+            path="/cy-maths-in/services/services1"
             element={<ServicesOne />}
           />
           <Route
-            path="/services/services2"
+            path="/cy-maths-in/services/services2"
             element={<ServicesTwo />}
           />
           <Route
-            path="/services/services3"
+            path="/cy-maths-in/services/services3"
             element={<ServicesThree />}
           />
           <Route
-            path="/contact"
+            path="/cy-maths-in/contact"
             element={<Contact />}
           />
           <Route
-            path="/events"
+            path="/cy-maths-in/events"
             element={<Events />}
           />
           <Route
-            path="/events/events1"
+            path="/cy-maths-in/events/events1"
             element={<EventsOne />}
           />
           <Route
-            path="/events/events2"
+            path="/cy-maths-in/events/events2"
             element={<EventsTwo />}
           />
           <Route
-            path="/support"
+            path="/cy-maths-in/support"
             element={<Support />}
           />
 
