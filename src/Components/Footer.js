@@ -1,14 +1,15 @@
 import styled from "styled-components";
-import logo from '../assets/CY-MATHS-IN-Logo.jpeg';
+import graph from '../assets/CY-MATHS-IN-Graph.jpg';
+import { FaLinkedin,FaYoutube } from "react-icons/fa";
 
 const StyledFooter = styled.footer`
   background: rgb(255, 255, 255);
   border-top: 1px solid black;
-  height: 40px;
+  height: 5vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1.5vw;
+  padding: 1vh 1.5vw;
   z-index: 100;
 `;
 
@@ -16,13 +17,31 @@ const StyledImg = styled.img`
   height: 100%;
 `;
 
+const SocialMedia = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+`;
+
+const UrlLink = styled.a`
+  height: 100%;
+  display: flex;
+  align-items: center;
+`;
+
 
 export default function Footer() {
 
   return (
     <StyledFooter>
-      <StyledImg src={logo} alt='logo' />
-      <span style={{fontSize: '10px'}} >© CY-MATHS-IN | All Rights Reserved</span>
+      <StyledImg src={graph} alt='graph' />
+      <span style={{fontSize: '9px'}} >© CY-MATHS-IN | All Rights Reserved</span>
+      <SocialMedia>
+        <UrlLink href="https://cy.linkedin.com/company/cymathsin" target="_blank" rel="noreferrer"> <FaLinkedin color="#0a66c2" /> </UrlLink>
+        <UrlLink href="https://www.youtube.com/" target="_blank" rel="noreferrer"> <FaYoutube color="#FF0000" /> </UrlLink>
+      </SocialMedia>
     </StyledFooter>
   );
 };

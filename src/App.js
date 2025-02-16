@@ -1,5 +1,6 @@
 
 import "./App.css";
+import ScrollToTop from "./utils/scrollToTop";
 import {
   BrowserRouter as Router,
   Routes,
@@ -30,6 +31,7 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
 
         <Route element={<Layout />}>

@@ -14,10 +14,13 @@ import {
     SidebarLink,
     SidebarLabel,
     SidebarLogo,
-    SidebarFooter
+    SidebarFooter,
+    SidebarSocialMedia,
+    SidebarUrlLink
 } from "./NavbarElements";
 import logo from '../../assets/CY-MATHS-IN-Logo.jpeg';
-
+import graph from '../../assets/CY-MATHS-IN-Graph.jpg';
+import { FaLinkedin,FaYoutube } from "react-icons/fa";
 
 export default function Navbar() {
   const [sidebar,setSitebar] = useState(false);
@@ -27,6 +30,7 @@ export default function Navbar() {
       <Nav>
         
         <NavLinkImg to="/cy-maths-in/" >
+          <StyledLogo src={graph} alt="graph" />
           <StyledLogo src={logo} alt="logo" />
         </NavLinkImg>
 
@@ -54,8 +58,8 @@ export default function Navbar() {
           <SidebarWrap>
 
             <SidebarClose to="#">
-              <CloseIconWrapper>
-                <CloseIcon onClick={() => {setSitebar(prev => !prev)}} />
+              <CloseIconWrapper onClick={() => {setSitebar(prev => !prev)}}>
+                <CloseIcon />
               </CloseIconWrapper>
             </SidebarClose>
 
@@ -94,8 +98,18 @@ export default function Navbar() {
             </SidebarLogo>
 
             <SidebarFooter>
+              Cypriot Service Network of<br /> Mathematical Sciences in<br /> Industry and Innovation <br /><br />
               © CY-MATHS-IN <br /> All Rights Reserved
             </SidebarFooter>
+
+            <SidebarSocialMedia>
+              <SidebarUrlLink href="https://cy.linkedin.com/company/cymathsin" target="_blank" rel="noreferrer"> 
+                <FaLinkedin color="#0a66c2" /> 
+              </SidebarUrlLink>
+              <SidebarUrlLink href="https://www.youtube.com/" target="_blank" rel="noreferrer"> 
+                <FaYoutube color="#FF0000" /> 
+              </SidebarUrlLink>
+            </SidebarSocialMedia>
 
           </SidebarWrap>
         </SidebarNav>
