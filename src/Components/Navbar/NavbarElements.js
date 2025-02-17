@@ -36,7 +36,7 @@ export const NavMenu = styled.div`
   align-items: center;
   white-space: nowrap;
   height: 100%;
-  @media screen and ((orientation: portrait) or (max-width: 1000px)) {
+  @media screen and ((orientation: portrait) or (max-width: 900px)) {
     display: none;
   }
 `;
@@ -45,9 +45,9 @@ export const ThreeBars = styled(FaBars)`
   display: none;
   color: #808080;
   transition: 150ms;
-  @media screen and ((orientation: portrait) or (max-width: 1000px)) {
+  @media screen and ((orientation: portrait) or (max-width: 900px)) {
     display: block;
-    font-size: 10vh;
+    font-size: 7vh;
     cursor: pointer;
   }
   &:hover {
@@ -57,12 +57,12 @@ export const ThreeBars = styled(FaBars)`
 
 export const NavLinkTxt = styled(NavLink)`
   color:rgb(155, 155, 155);
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: 600;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 4vh;
+  padding: 0 3.5vh;
   height: 100%;
   cursor: pointer;
   transition: 150ms;
@@ -108,8 +108,8 @@ export const CloseIconWrapper = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  width: 10vh;
-  height: 10vh;
+  width: 7vh;
+  height: 7vh;
   transition: 150ms;
   &:hover {
     background:rgb(240, 47, 47);
@@ -117,7 +117,7 @@ export const CloseIconWrapper = styled.div`
 `;
 
 export const CloseIcon = styled(AiOutlineClose)`
-  font-size: 5vh;
+  font-size: 4vh;
   color: white;
 `;
 
@@ -130,7 +130,7 @@ export const SidebarLink = styled(Link)`
   list-style: none;
   height: 4vh;
   text-decoration: none;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: 600;
   transition: 150ms;
   &:hover {
