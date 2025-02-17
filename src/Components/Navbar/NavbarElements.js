@@ -36,7 +36,7 @@ export const NavMenu = styled.div`
   align-items: center;
   white-space: nowrap;
   height: 100%;
-  @media screen and ((orientation: portrait) or (max-width: 800px)) {
+  @media screen and ((orientation: portrait) or (max-width: 1000px)) {
     display: none;
   }
 `;
@@ -45,9 +45,9 @@ export const ThreeBars = styled(FaBars)`
   display: none;
   color: #808080;
   transition: 150ms;
-  @media screen and ((orientation: portrait) or (max-width: 800px)) {
+  @media screen and ((orientation: portrait) or (max-width: 1000px)) {
     display: block;
-    font-size: 2.2rem;
+    font-size: 10vh;
     cursor: pointer;
   }
   &:hover {
@@ -57,12 +57,12 @@ export const ThreeBars = styled(FaBars)`
 
 export const NavLinkTxt = styled(NavLink)`
   color:rgb(155, 155, 155);
-  font-size: 1.2rem;
+  font-size: 4vh;
   font-weight: 600;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1.2rem;
+  padding: 0 4vh;
   height: 100%;
   cursor: pointer;
   transition: 150ms;
@@ -79,7 +79,7 @@ export const NavLinkTxt = styled(NavLink)`
 export const SidebarNav = styled.nav`
   background: white;
   border-left: 2px solid black;
-  width: 30vw;
+  width: 50vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -92,7 +92,6 @@ export const SidebarNav = styled.nav`
 
 export const SidebarWrap = styled.div`
   width: 100%;
-  position: relative;
 `;
 
 export const SidebarClose = styled(Link)`
@@ -109,8 +108,8 @@ export const CloseIconWrapper = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 10vh;
+  height: 10vh;
   transition: 150ms;
   &:hover {
     background:rgb(240, 47, 47);
@@ -118,8 +117,8 @@ export const CloseIconWrapper = styled.div`
 `;
 
 export const CloseIcon = styled(AiOutlineClose)`
-  font-size: 1.3rem;
-  color: rgb(0, 0, 0);
+  font-size: 5vh;
+  color: white;
 `;
 
 export const SidebarLink = styled(Link)`
@@ -127,11 +126,12 @@ export const SidebarLink = styled(Link)`
   color: rgb(155, 155, 155);
   justify-content: flex-start;
   align-items: center;
-  padding: 1.5vh 2vw;
+  padding: 2vh 4vw;
   list-style: none;
-  height: 5vh;
+  height: 4vh;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 4vh;
+  font-weight: 600;
   transition: 150ms;
   &:hover {
     color: #2A74B5;
@@ -146,34 +146,33 @@ export const SidebarLabel = styled.span`
 `;
 
 export const SidebarLogo = styled.div`
-  margin-top: 10vh;
-  margin-left: 2vw;
+  margin-top: 4vh;
+  margin-left: 4vw;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0;
-  height: 40px;
+  height: 8vh;
 `;
 
 export const SidebarFooter = styled.div`
   margin-top: 2vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
   display: flex;
   align-items: center;
-  font-size: 10px;
+  font-size: 1.5vh;
   white-space: nowrap;
 `;
 
 export const SidebarSocialMedia = styled.div`
-  position: absolute;
-  bottom: 1vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-top: 4vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1.5rem;
+  gap: 3vh;
+  font-size: 5vh;
 `;
 
 export const SidebarUrlLink = styled.a`
